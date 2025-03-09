@@ -23,3 +23,5 @@ You have the power to add translation to our database, and we will appreciate yo
 POST to endpoint `api/c2m` for character to morse code in formate `{char0: morse_code0, char1: morse_cose1, ...}`.
 
 or POST to endpoint `api/m2c` for morse code to character in formate `{morse_code0: char0, morse_cose1: char1, ...}`.
+
+<!--npx github-readme-to-html -s "dark" -t "API description" -d "templates"-->

@@ -1,0 +1,358 @@
+
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>API description</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+            body {
+  font: 400 16px/1.5 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #f0f6fc;
+  background-color: #0d1117;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
+  font-kerning: normal;
+  padding: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+  }
+
+  main {
+    padding: 0px 20px 20px 20px !important;
+  }
+}
+
+main {
+  margin: 0px;
+  max-width: 900px;
+  border: 1px solid rgba(61, 68, 77, 0.7);
+  padding: 10px 40px;
+  padding-bottom: 20px;
+  border-radius: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  color: rgba(61, 68, 77, 0.7);
+  background-color: rgba(61, 68, 77, 0.7);
+  height: 1px;
+  flex: 0 1 auto;
+  margin: 1em 0;
+  padding: 0;
+  border: none;
+}
+
+/**
+ * Links
+ */
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+a:visited {
+  color: #0366d6;
+}
+a:hover {
+  color: #0366d6;
+  text-decoration: underline;
+}
+
+pre {
+  /* in light mode, this has a background-color 
+     but that looks janky in dark mode */
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+/**
+  * Code blocks
+  */
+
+code {
+  background-color: #151b23;
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  word-wrap: break-word;
+  padding: 0.2em 0.4em;
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier,
+    monospace;
+}
+
+pre > code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+  font-size: 100%;
+}
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  margin-left: 30px;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  border-left-width: 3px;
+  padding: 0 1em;
+  color: #828282;
+  border-left: 4px solid #3d444d;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+  font-style: italic;
+}
+blockquote * {
+  font-style: normal !important;
+  letter-spacing: 0;
+  color: #6a737d !important;
+}
+
+/**
+ * Tables
+ */
+table {
+  border-spacing: 2px;
+  display: block;
+  font-size: 14px;
+  overflow: auto;
+  width: 100%;
+  margin-bottom: 16px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 6px 13px;
+  border: 1px solid #3d444d;
+}
+
+th {
+  font-weight: 600;
+  padding: 6px 13px;
+  border: 1px solid #3d444d;
+}
+
+tr {
+  background-color: #0d1117;
+  border-top: 1px solid #c6cbd1;
+}
+
+table tr:nth-child(2n) {
+  background-color: #151b23;
+}
+
+/**
+ * Others
+ */
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 24px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #f0f6fc;
+}
+
+ul {
+  margin-top: 0;
+}
+
+li {
+  color: #f0f6fc;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+li + li {
+  margin-top: 0.25em;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: #f0f6fc;
+}
+
+a:visited {
+  color: #0366d6;
+}
+
+h1,
+h2,
+h3 {
+  border-bottom: 1px solid rgba(61, 68, 77, 0.7);
+  color: #f0f6fc;
+  /* Darker */
+}
+
+            </style>
+            <style>
+            pre code.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em
+}
+code.hljs {
+  padding: 3px 5px
+}
+/*!
+  Theme: GitHub Dark Dimmed
+  Description: Dark dimmed theme as seen on github.com
+  Author: github.com
+  Maintainer: @Hirse
+  Updated: 2021-05-15
+
+  Colors taken from GitHub's CSS
+*/
+.hljs {
+  color: #adbac7;
+  background: #22272e
+}
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta .hljs-keyword,
+.hljs-template-tag,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable.language_ {
+  /* prettylights-syntax-keyword */
+  color: #f47067
+}
+.hljs-title,
+.hljs-title.class_,
+.hljs-title.class_.inherited__,
+.hljs-title.function_ {
+  /* prettylights-syntax-entity */
+  color: #dcbdfb
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-literal,
+.hljs-meta,
+.hljs-number,
+.hljs-operator,
+.hljs-variable,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id {
+  /* prettylights-syntax-constant */
+  color: #6cb6ff
+}
+.hljs-regexp,
+.hljs-string,
+.hljs-meta .hljs-string {
+  /* prettylights-syntax-string */
+  color: #96d0ff
+}
+.hljs-built_in,
+.hljs-symbol {
+  /* prettylights-syntax-variable */
+  color: #f69d50
+}
+.hljs-comment,
+.hljs-code,
+.hljs-formula {
+  /* prettylights-syntax-comment */
+  color: #768390
+}
+.hljs-name,
+.hljs-quote,
+.hljs-selector-tag,
+.hljs-selector-pseudo {
+  /* prettylights-syntax-entity-tag */
+  color: #8ddb8c
+}
+.hljs-subst {
+  /* prettylights-syntax-storage-modifier-import */
+  color: #adbac7
+}
+.hljs-section {
+  /* prettylights-syntax-markup-heading */
+  color: #316dca;
+  font-weight: bold
+}
+.hljs-bullet {
+  /* prettylights-syntax-markup-list */
+  color: #eac55f
+}
+.hljs-emphasis {
+  /* prettylights-syntax-markup-italic */
+  color: #adbac7;
+  font-style: italic
+}
+.hljs-strong {
+  /* prettylights-syntax-markup-bold */
+  color: #adbac7;
+  font-weight: bold
+}
+.hljs-addition {
+  /* prettylights-syntax-markup-inserted */
+  color: #b4f1b4;
+  background-color: #1b4721
+}
+.hljs-deletion {
+  /* prettylights-syntax-markup-deleted */
+  color: #ffd8d3;
+  background-color: #78191b
+}
+.hljs-char.escape_,
+.hljs-link,
+.hljs-params,
+.hljs-property,
+.hljs-punctuation,
+.hljs-tag {
+  /* purposely ignored */
+  
+}
+            </style>
+          </head>
+          <body>
+            <main>
+        <h1 id="morse-code-api">Morse Code Api</h1>
+<h2 id="description">Description</h2>
+<p>This project is a simple API that gives users Morse Code translation.</p>
+<h2 id="usage">Usage</h2>
+<h3 id="get-requests">GET requests</h3>
+<p>You can request translation data in json dictionary format by endpoint <code>api/&lt;orientation&gt;/&lt;specification&gt;</code>.</p>
+<p>Orientation endpoints avalible:</p>
+<ul>
+<li><code>c2m</code> for character to morse code.</li>
+<li><code>m2c</code> for morse code to character.</li>
+</ul>
+<p>Specification endpoints available:</p>
+<ul>
+<li>None for a full dictionary</li>
+<li><code>alpha</code> for a dictionary that only contains alphabetical characters.</li>
+<li><code>numeric</code> for a dictionary that only contains numeric characters.</li>
+<li><code>symbol</code> for a dictionary that only contains symbol characters.</li>
+<li><code>char</code> for live translation, requires parameter <code>key</code>, user should input a character/morse code based on the orientation. e.g.<code>api/c2m/char?key="a"</code>(results in morse code for "a")</li>
+</ul>
+<h3 id="post-requests">POST requests</h3>
+<p>You have the power to add translation to our database, and we will appreciate your support!</p>
+<p>POST to endpoint <code>api/c2m</code> for character to morse code in formate <code>{char0: morse_code0, char1: morse_cose1, ...}</code>.</p>
+<p>or POST to endpoint <code>api/m2c</code> for morse code to character in formate <code>{morse_code0: char0, morse_cose1: char1, ...}</code>.</p>
+<!--npx github-readme-to-html -s "dark" -t "API description" -d "templates"-->
+            </main>
+          </body>
+        </html>
