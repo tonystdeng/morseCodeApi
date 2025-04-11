@@ -16,7 +16,7 @@ Specification endpoints available:
 - `alpha` for a dictionary that only contains alphabetical characters.
 - `numeric` for a dictionary that only contains numeric characters.
 - `symbol` for a dictionary that only contains symbol characters.
-- `char` for live translation, requires parameter `key`, user should input a character/morse code based on the orientation. e.g.`api/c2m/char?key="a"`(results in morse code for "a")
+- `char` for live translation, requires parameter `key`, user should input a character/morse code based on the orientation. e.g.`api/c2m/char?key=a`(results in morse code for "a")
 ### POST requests
 You have the power to add translation to our database, and we will appreciate your support!
 
